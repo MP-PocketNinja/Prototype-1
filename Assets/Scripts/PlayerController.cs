@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //Move forward
-        transform.Translate(Vector3.forward * Time.deltaTime * 50);
+        transform.Translate(Vector3.forward * Time.deltaTime * 20);
 
     }
 }

@@ -17,6 +17,5 @@ public class FollowPlayer : MonoBehaviour
     void Update()
     {
         transform.position = player.transform.position + offset;
-        transform.TransformDirection = player.transform.Rotate;
     }
 }

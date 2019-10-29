@@ -20,11 +20,16 @@ public class PlayerController : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         forwardInput = Input.GetAxis("Vertical");
-        
+
+        Steering();
+    }
+
+    private void Steering()
+    {
         //Move forward
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
 
         //Turn
-        transform.Rotate(Vector3.up, TurnSpeed * horizontalInput * Time.deltaTime); 
+        transform.Rotate(Vector3.up, TurnSpeed * horizontalInput * Time.deltaTime);
     }
 }

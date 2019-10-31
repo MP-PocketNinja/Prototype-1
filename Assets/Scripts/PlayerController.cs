@@ -5,6 +5,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    public GameObject speedbooster;
+
     void Start()
     {
 
@@ -22,6 +25,12 @@ public class PlayerController : MonoBehaviour
         forwardInput = Input.GetAxis("Vertical");
 
         Steering();
+
+        if (speedbooster = GameObject.FindWithTag("speed"))
+        {
+           int speed * 2;  
+        }
+
     }
 
     private void Steering()

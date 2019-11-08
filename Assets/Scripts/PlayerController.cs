@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
 
         if (speedbooster = GameObject.FindWithTag("speed"))
         {
-           int speed * 2;  
+            
         }
 
     }
